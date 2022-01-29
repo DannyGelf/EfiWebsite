@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="header-footer.css" -- />
+    <link rel="stylesheet" href="general.css" -- />
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!--link rel="stylesheet" href="css/bootstrap.css" type="text/css" /-->
+    <link rel="stylesheet" href="contactcss.css" />
+
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+
+    <script src="ascript.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Contact</title>
+    <link rel="icon" type="image/ico" href="icons/Leaf-favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+  <body class="fondo_contact">
+    <header>
+      <nav class="navbar1">
+        <div class=" on-hover-navbar brand-title">
+          <a href="HomePage.html" title="Home Page"
+            ><img
+              src="icons/About Me/Screen Shot 2021-12-13 at 21.32.11.png"
+              width="150px"
+              height="auto"
+              alt="Logo"
+          /></a>
+        </div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li class="on-hover-navbar i-hoja"><a href="AboutMe.html">About Me</a></li>
+            <li class="on-hover-navbar i-foco"><a href="Homepage.html#my-projects-id">Projects</a></li>
+            <li class="on-hover-navbar i-carta"><a href="Contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="fondo_contact">
+      <section class="form-registro">
+        <img
+          class="cloud-img"
+          src="icons/Contact Me/Cloudy.png"
+          width="60%"
+          height="auto"
+          alt="Image"
+        />
+        <h1
+          class="titulo"
+          style="text-align: center; margin-top: -130px; margin-bottom: 90px"
+        >
+          Let's Talk
+        </h1>
+
+        <form action="mailto:dannys431@gmail.com" method="post" enctype=”multipart/form-data”
+           id="contact-form" onsubmit="submitForm();return false">
+          <label class="label-input" for="">Name:</label>
+          <input class="controls" type="text" name="nombre" id="nombre" />
+          <br />
+
+          <label class="label-input" for="">Email:</label>
+          <input class="controls" type="email" name="email" id="email" />
+          <br />
+
+          <label class="label-input" for="mensaje">Message:</label>
+          <textarea
+            class="controls"
+            name="mensaje"
+            id="mensaje"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+
+          <div style="text-align: center">
+            <button class="botons" onclick="submitForm"> Send </button>
+          </div>
+          <div style="text-align: center">
+            <label id="thank-you" class="aceptar" for="">Thank You ✔</label>
+          </div>
+          <br />
+          <br />
+          <br />
+
+          <div style="text-align: center">
+            <label class="or" for="">Or</label>
+          </div>
+          <br />
+          <br />
+          <div class="container-social row justify-content-center">
+            <div class="row justify-content-center"> 
+              <div class="col-sm col-lg-3 social-network-icon bounce"> 
+              <a
+                href="https://www.instagram.com/efigelfi"
+                class="social-icon1 si-large1 inline-block1"
+                title="Instagram"
+              >
+                <img
+                  src="icons/Home Page/instagram-3.png"
+                  alt="Image-icon"
+                  class="center-block1 img-socials1"
+                />
+              </a>
+            </div>
+            <div class="col-sm  col-lg-3 social-network-icon bounce"> 
+              <a
+                href="https://www.facebook.com/efrat.sharon.73"
+                class="social-icon1 si-large1 inline-block1"
+                title="Facebook"
+              >
+                <img
+                  src="icons/Home Page/facebook-5.png"
+                  alt="Image-icon"
+                  class="center-block1 img-socials1"
+                />
+              </a>
+            </div>
+            <div class=" col-sm  col-lg-3 container-social bounce">
+              <a
+                href="https://www.linkedin.com/mwlite/in/efrat-sharon-b40455183"
+                class="social-icon1 si-large1 inline-block1"
+                title="Linkedin"
+              >
+                <img
+                  src="icons/Home Page/linkedin.png"
+                  alt="Image-icon"
+                  class="center-block1 img-socials1"
+                />
+              </a>
+            </div>
+          </div>
+          </div>
+        </form>
+      </section>
+    </div>
+    <script type="text/javascript" src="contact.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
