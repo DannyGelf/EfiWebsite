@@ -76,13 +76,13 @@
        text-align: center;
        font-size: 15px;
        border: none;
-       background:#c0d8b6;
+       background:#F8B3B3;
        border-radius: 10px;
        padding: 0.5em 0.8em 0.5em 0.8em;
        color: #ffffff;
        opacity: 0;
    }
-   .thank-you-opacity {
+   .something-wrong-opacity {
      opacity: 1;
      transition: all .1s ease-in-out;
    }
@@ -247,4 +247,8 @@ a img {
   .form-registro {
     width: auto;
   }
+}
+
+.thankyou-margin {
+  margin-bottom: 2.5rem;
 }
