@@ -7,9 +7,9 @@ window.onscroll = function() {
         document.querySelector('.go-top-container')
         .classList.remove('show');
     }
-    if (document.documentElement.scrollTop > 120) {
-        $('.myskills1').addClass('myskills-bounce');
-    }
+    // if (document.documentElement.scrollTop > 120) {
+    //     $('.myskills1').addClass('myskills-bounce');
+    // }
     
 }
 

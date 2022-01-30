@@ -11,7 +11,6 @@ let window_weight = $(window).width();
         $('#icons-top').addClass('justify-content-center');
         $('#label-next').text($("#label-next").text().replace("Next Project →", "→"))
         $('#label-previous').text($("#label-previous").text().replace("← Previous Project", "←"))
-        console.log('Screen size: ', window_weight)
     }
     else { 
       $('#icons-top').addClass('justify-content-left');
