@@ -9,6 +9,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="homepageoveride.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap" rel="stylesheet">
@@ -32,18 +33,21 @@
               alt="Logo"
           /></a>
         </div>
+        <div class="hamburger-menu" >
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
         <div class="navbar-links">
-          <ul>
-            <li class="on-hover-navbar i-hoja"><a href="AboutMe.html">About Me</a></li>
+          <ul class="toggle-menu">
+            <!-- <img src="/icons/Home Page/Projects2.png" alt="light-bulb"> -->
+            <li class="on-hover-navbar i-hoja"> <a href="AboutMe.html">About Me</a></li>
             <li class="on-hover-navbar i-foco"><a href="#my-projects-id">Projects</a></li>
             <li class="on-hover-navbar i-carta"><a href="Contact.html">Contact Me</a></li>
           </ul>
         </div>
+      </div>
       </nav>
     </header>
     <div class="background-1">
@@ -226,16 +230,16 @@
               <h1 class="titulo-skills">My Projects</h1>
               <div class="row justify-content-center" id="first-project-row" > 
               <div class="first-project-image">
-               <a href="MyNetcraft.html"> <img class="netcraft-img img-fluid"
+               <a href="MyNetcraft.html"> <img class="project-bounce netcraft-img img-fluid"
                 src="icons/Home Page/Home_img/MyNetcraft cover photo1.png"
                 alt="img-MyNetcraft"
               /></a>
                  
                   <div class="image-project1">
               
-                  <div class="netcraft-logo image-project1 img-fluid" >
+                  <!-- <div class="netcraft-logo image-project1 img-fluid" >
                     <img src="icons/Home Page/Mynet.png" alt="logo">
-                  </div>
+                  </div> -->
                 </div>
               
             </div>
@@ -258,14 +262,14 @@
 
       <div class="row justify-content-center" id="second-project-row" > 
         <div class="second-project-image" id="second-project-image-div">
-          <a href="SorayaZ.html"> <img class="img-fluid image-project2"
+          <a href="SorayaZ.html"> <img class="project-bounce img-fluid image-project2"
           src="icons/Home Page/Home_img/Soraya cover photo.png"
           alt="Img-SZ"/></a>
            <div class="image-project2">
           
-             <div class="soraya-logo image-project1 img-fluid" >
+             <!-- <div class="soraya-logo image-project1 img-fluid" >
                 <img src="icons/Soraya Zidane/Soraya_s logo.png" alt="logo">
-            </div>
+            </div> -->
           </div>
      </div>
          <div class="content-project1">
@@ -290,6 +294,43 @@
                
          
           </div>
+          <div class="row justify-content-center" id="third-project-row" > 
+            <div class="first-project-image">
+             <img class="project-image-hover netcraft-img img-fluid"
+              src="icons/Home Page/Home_img/JunexComingSoon.png"
+              alt="img-Junex"
+            />
+               
+                <div class="image-project1">
+            
+                <!-- <div class="netcraft-logo image-project1 img-fluid" >
+                  <img src="icons/Home Page/Mynet.png" alt="logo">
+                </div> -->
+              </div>
+            
+          </div>
+            <div class="content-project1">
+              <div class="">
+                <p class="text-tag-proj">UX/UI Design</p>
+                <p class="text-tag-proj">Figma</p>
+                <br />
+                <p class="text-tag-proj">Branding</p>
+                <p class="text-tag-proj">Social</p>
+                <br />
+                <div class="project-name" > 
+                <h3 class="project-name-title">Junex</h3>
+                <p class="p_proj">
+                  A platform that connects product managers, developers, and designers at the 
+                  beginning of their professional path with associations and small businesses 
+                  for product development.
+
+                </p>
+              </div>
+              </div>
+            </div>
+          </div>
+
+
           </div>
         </div>
          
@@ -332,7 +373,7 @@
           </div>
 
           <div class="container-social row justify-content-center">
-            <div class="row justify-content-center"> 
+            <div id="icons-bottom" class="row justify-content-center"> 
               <div class="col-sm col-lg-3 social-network-icon bounce"> 
               <a
                 href="https://www.instagram.com/efigelfi"

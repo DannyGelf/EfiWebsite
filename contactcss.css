@@ -1,7 +1,7 @@
 
 @import url('http://fonts.cdnfonts.com/css/aharoni');
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca:wght@200&family=Oswald:wght@500&family=Outfit:wght@300;400&family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap');
 
 .contact-post {
     border: 1px solid transparent;
@@ -24,12 +24,12 @@
 
    /* seccion formulario */
    .form-registro {
-       width: 450px;
+       width: 28rem;
        background: transparent;
-       padding: 30px;
+       padding: 2rem;
        margin: auto;
-       margin-top: 10px;
-       font-family: 'Aharoni', sans-serif;
+       margin-top: 1rem;
+       font-family: 'Aharoni CLM', sans-serif;
 
    }
 
@@ -41,7 +41,7 @@
    }
 
    .titulo {
-    font-family: 'Aharoni', sans-serif;
+    font-family: 'Aharoni CLM', sans-serif;
     color: #645056;
     font-size: 40px;
     position: relative;
@@ -169,77 +169,82 @@
     font-size: 30px;
     line-height: 54px !important;
   }
-  .social-icon1 {
-    margin: 0 5px 5px 0;
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 38px !important;
-    color: #5c2cbc;
-    text-shadow: none;
-    overflow: hidden;
-  }
-  .i-rounded1,
-  .i-plain1,
-  .i-circled1,
-  .i-bordered1,
-  .social-icon1 {
-    display: block;
-    float: left;
-    margin: 4px 11px 7px 0;
-    text-align: center !important;
-    font-size: 28px;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
-    cursor: pointer;
-    font-style: normal;
-  }
-  .inline-block1 {
-    float: none !important;
-    display: inline-block !important;
-  }
+.social-icon1 {
+  margin: 0 5px 5px 0;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  line-height: 38px !important;
+  color: #5c2cbc;
+  text-shadow: none;
+  overflow: hidden;
+}
+.i-rounded1,
+.i-plain1,
+.i-circled1,
+.i-bordered1,
+.social-icon1 {
+  display: block;
+  float: left;
+  margin: 4px 11px 7px 0;
+  text-align: center !important;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 30%);
+  cursor: pointer;
+  font-style: normal;
+}
+.inline-block1 {
+  float: none !important;
+  display: inline-block !important;
+}
+
+.center-block1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+a img {
+  border: none;
+}
+
+.img-intro {
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #D8A5AD;
+}
+.img-socials1 {
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+}
+
+.container-social {
+  width: auto;
+  align-items: center;
+}
+.bounce {
+  height: 50px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  transition: ease-out
+}
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  15%  { transform: translateY(-12px); }
+  35% { transform: translateY(-10px); }
+  80% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+
+}
   
-  .center-block1 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  a img {
-    border: none;
-  }
-  
-  .img-intro {
-    border-style: solid;
-    border-width: 0.1rem;
-    border-color: #D8A5AD;
-  }
-  .img-socials1 {
-    max-width: 100%;
-    vertical-align: middle;
-    border: 0;
-  }
-  
-  .container-social {
+@media screen and (max-width:800px) {
+  .form-registro {
     width: auto;
-    align-items: center;
   }
-  .bounce {
-    height: 50px;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
-    transition: ease-out
-  }
-  .bounce:hover {
-    animation-name: bounce;
-    animation-timing-function: ease;
-  }
-  @keyframes bounce {
-    0%   { transform: translateY(0); }
-    15%  { transform: translateY(-12px); }
-    35% { transform: translateY(-10px); }
-    80% { transform: translateY(-10px); }
-    100% { transform: translateY(0px); }
-  
-  }
-  
+}

@@ -1,12 +1,9 @@
 @import url('http://fonts.cdnfonts.com/css/aharoni');
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Questrial&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca:wght@300&family=Oswald:wght@500&family=Questrial&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Lexend+Deca:wght@200&family=Oswald:wght@500&family=Outfit:wght@300;400&family=Questrial&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;500;700&display=swap');
+@import url("http://fonts.cdnfonts.com/css/aharoni-clm");
 
 *{
     margin: 0;
@@ -80,12 +77,18 @@ footer {
    .fondo_soraya2 {
     margin: 0px;
     padding: 0px;
-    background: url('icons/Soraya Zidane/0C8A7220_mod.jpg');
-    background-size: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
+    
   
    }
+
+   .background-soraya {
+    background: url('icons/Soraya Zidane/0C8A7220_mod.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 8px 8px white inset;
+   }
+   
 
    .leaf-img-wrap {
     overflow: visible;
@@ -116,6 +119,7 @@ footer {
     z-index: 0;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+    
   }
   
   .text-over-leaf{
@@ -125,7 +129,7 @@ footer {
    
    /* titulo princ. */
    h1{
-    font-family: 'Aharoni', sans-serif;
+    font-family: 'Aharoni CLM', sans-serif;
     color: #645056;
     font-size: 50px;
 }
@@ -145,12 +149,18 @@ footer {
   margin-top: 5%;
 }
    .title2 {
-    font-family: 'Aharoni', sans-serif;
+    font-family: 'Aharoni CLM', sans-serif;
     font-size: 35px;
     color: #9C8189;
    }
+
+   .title-heading {
+    margin-bottom: 3rem;
+
+   }
+
    .title3 {
-    font-family: 'Aharoni', sans-serif;
+    font-family: 'Aharoni CLM', sans-serif;
     font-size: 25px;
     color: #9C8189;
    }
@@ -216,7 +226,7 @@ footer {
 
        .main-title {
          font-size: 5rem;
-         padding: 3%;
+         padding: 4rem;
        }
     
        .text-mynet-li {
@@ -235,6 +245,11 @@ footer {
     font-size: 25px;
     color: #9C8189;
     text-decoration-line: none;
+    text-decoration: none;
+   }
+   .label_next:hover {
+     text-decoration: none;
+     color: #645056;
    }
 
 
@@ -355,6 +370,8 @@ footer {
   display: inline-block !important;
 }
 
+
+
 .center-block1 {
   display: block;
   margin-left: auto;
@@ -431,7 +448,9 @@ a img {
     animation-timing-function: ease;
 
 }
-
+.soraya-text {
+  margin-top: 3rem;
+}
 .wire-framing-image {
   width: 60%;
   height: auto;
@@ -441,11 +460,28 @@ a img {
   width: 90%;
   height: auto;
 }
+
+.arrow-align-previous {
+  text-align :right;
+}
+
+.arrow-align-next {
+  text-align: left;
+}
+.information-image {
+  width: 80%;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .main-title {
     font-size: 4.5rem;
+    padding: 3%;
   }
 
+  .leaf-bg {
+    display: none;
+  }
   .top-dots-mobile {
     padding-bottom: 15px;
   }
@@ -477,6 +513,16 @@ a img {
     padding-right: 0px !important;
     
   }
+
+  .label_next {
+    font-size: 50px;
+ 
+   }
+
+   .graphic-elements {
+     width: 100%;
+   }
+
   .mobile-padding {
     padding: 5% 0px;
     padding-left: 0px;
@@ -500,8 +546,10 @@ a img {
     height: auto;
   }
 
+
+
   .leaf-bg-soraya {
-    opacity: 0.3;
+    /* opacity: 0.3;
     position: absolute;
     right: 60px;
     top: 595px;
@@ -511,7 +559,8 @@ a img {
     margin-left: 20%;
     z-index: 0;
     -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
+    transform: scaleX(-1); */
+    display: none;
   }
   }
 
@@ -520,4 +569,26 @@ a img {
       text-align:left;
       padding-left:10%;
     }
+
+    .main-title {
+      margin-bottom: 3%;
+    }
   }
+
+  @media (min-width:769px) and (max-width:1000px) {
+    .mobile-padding {
+      padding: 5% 0px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+/* @media (max-width:576) {
+  .col-competitors {
+    display: flex;
+    flex-wrap: wrap;
+    flex:0 0 50%;
+    max-width:50%;
+  }
+  
+} */
+ 

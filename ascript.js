@@ -9,7 +9,8 @@ let window_weight = $(window).width();
     if (window_weight <= 768) {
         $('#icons-top').removeClass('justify-content-left');
         $('#icons-top').addClass('justify-content-center');
-        $
+        $('#label-next').text($("#label-next").text().replace("Next Project →", "→"))
+        $('#label-previous').text($("#label-previous").text().replace("← Previous Project", "←"))
         console.log('Screen size: ', window_weight)
     }
     else { 
