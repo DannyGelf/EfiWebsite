@@ -479,6 +479,10 @@ a img {
     padding: 3%;
   }
 
+.background-soraya {
+  background-position-y: bottom;
+}  
+
   .leaf-bg {
     display: none;
   }

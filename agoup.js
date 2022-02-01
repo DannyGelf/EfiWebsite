@@ -39,3 +39,9 @@ document.getElementById("email-div-id").addEventListener('mouseout',function(){
     document.getElementById('copied-text').innerHTML = 'Click to Copy Address';
 }); 
 
+
+
+document.getElementById("first-project-img").addEventListener('mouseout',function(){ 
+    document.getElementById('first-project-img').classList.add("opacity-back")
+    console.log("mouseout event - opacity-back added")
+}); 
