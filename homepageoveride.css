@@ -22,6 +22,13 @@
     height: auto;
 }
 
+.skill-container {
+  margin:0 auto;
+}
+
+.row-margin {
+  margin: 2rem 0;
+}
 @media screen and (max-width: 768px) {
     #icons-top {
         width: 65%;
