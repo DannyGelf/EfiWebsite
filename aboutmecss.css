@@ -67,7 +67,7 @@
   font-size: 33px;
   font-family: "Aharoni CLM", sans-serif;
   line-height: 3rem;
-  font-weight: 700;
+  /* font-weight: 700; */
   text-align: center;
 }
 
@@ -94,7 +94,7 @@
 .mexico {
   font-size: 21px;
   color: #9c8189;
-  font-family: "Outfit", sans-serif;
+  font-family: "Aharoni CLM", sans-serif;
   font-weight: 300;
 }
 
@@ -114,7 +114,9 @@
   font-size: 22px;
   line-height: 1.5;
   color: #9c8189;
-  font-family: "Outfit", sans-serif;
+  font-family: "Aharoni CLM", sans-serif;
+  padding-left: 3em;
+  padding-right: 5em;
 }
 
 /* .fondo_hoja {
@@ -158,7 +160,7 @@
 /* estilos footer */
 
 .text-footer1 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Aharoni CLM", sans-serif;
   color: #9c8189;
   font-size: 30px;
   text-align: center;
@@ -166,14 +168,14 @@
 
 
 .text-footer2 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Aharoni CLM", sans-serif;
   color: #9c8189;
   font-size: 25px;
   border: none;
 }
 
 .text-footer3 {
-  font-family: "Outfit", sans-serif;
+  font-family: "Aharoni CLM", sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: #9c8189;
@@ -186,20 +188,39 @@
 }
 
 .text-tag {
-  background-color: #fddae0;
+  background-color: #FEECEF;
   display: inline;
   margin: auto;
-  padding: 0.4em 0.6em 0.4em;
+  padding: 0.6em 0.8em 0.6em;
   font-weight: bold;
   line-height: 1;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.4em;
+  border-radius: 1em;
 }
 
 .background {
   background: rgb(255,255,255);
 background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,249,249,1) 100%);
+}
+
+.titulo.before-scroll-heading {
+  opacity: 0;
+  /* transform: translateY(10rem); */
+  transition: opacity 1s ease-in;
+  transition-delay: 1s;
+}
+
+.currently-in.before-scroll-heading {
+  opacity: 0;
+  /* transform: translateY(10rem); */
+  transition: opacity 1s ease-in;
+  transition-delay: 2s;
+}
+.titulo.before-scroll-heading.fade-in,
+.currently-in.before-scroll-heading.fade-in {
+  /* transform: translateY(0);  */
+  opacity: 1;
 }
 
 @media screen and (min-width:769px) {
@@ -289,6 +310,11 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,249,249,1) 
 
   .text-footer3 {
     font-size: 10px;
+  }
+
+  .social p {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

@@ -52,7 +52,7 @@
 
 .titulo-hi {
   padding-top: 30px;
-  color: #9c8189;
+  color: #645056;
   font-size: 50px;
   font-family: 'Aharoni CLM', sans-serif;
   font-weight:  bold;
@@ -724,15 +724,15 @@ font-size: 23px;
 /* estilo footer */
 
 .text-tag {
-  background-color: #fddae0;
+  background-color: #FEECEF;
   display: inline;
   margin: auto;
-  padding: 0.4em 0.6em 0.4em;
+  padding: 0.6em 0.8em 0.6em;
   font-weight: bold;
   line-height: 1;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25em;
+  border-radius: 1em;
 }
 
 
@@ -856,7 +856,7 @@ a img {
 }
 .titulo-2 {
   position: relative;
-  right: 10%;
+  right: 20%;
 }
 }
 

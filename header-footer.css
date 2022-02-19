@@ -351,15 +351,15 @@ footer {
     text-align: center;
   }
   .text-tag {
-    background-color: #fddae0;
+    background-color: #FEECEF;
     display: inline;
     margin: auto;
-    padding: 0.4em 0.6em 0.4em;
+    padding: 0.6em 0.8em 0.6em;
     font-weight: bold;
     line-height: 1;
     white-space: nowrap;
     vertical-align: baseline;
-    border-radius: 0.25em;
+    border-radius: 1em;
     font-size: 1.1rem;
   }
   

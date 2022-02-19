@@ -7,11 +7,54 @@ window.onscroll = function() {
         document.querySelector('.go-top-container')
         .classList.remove('show');
     }
-    // if (document.documentElement.scrollTop > 120) {
-    //     $('.myskills1').addClass('myskills-bounce');
-    // }
-    
 }
+
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -140px 0px"
+
+};
+
+const faders = document.querySelectorAll('.before-scroll');
+const titleFaders = (document.querySelectorAll('.before-scroll-heading'));
+const appearOnScroll = new IntersectionObserver(function(entries,appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        }
+        else {
+            entry.target.classList.add('fade-in');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+},
+appearOptions);
+
+faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+});
+titleFaders.forEach(titleFader => {
+    appearOnScroll.observe(titleFader);
+});
+
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         if(entry.isIntersecting) {
+//             document.querySelector('.before-scroll').classList.add('fade-in')
+//         }   
+//     })
+     
+// })
+
+// observer.observe(document.querySelector('#skills-container'));
+
+//     const scroller = document.querySelector("#skills-row1");
+//     scroller.addEventListener("scroll", event => {
+//         if (scroller > 10) {
+//             $('#skills-row1').addClass('fade-in');
+//         }; 
+// });
+
 
 document.querySelector('.go-top-container')
 .addEventListener('click', () => {
